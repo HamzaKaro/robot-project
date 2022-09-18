@@ -1,0 +1,10 @@
+--- RENSEIGNEMENT- --
+
+Dans le dossier «lib», il y a les fichiers correspondant à notre librairie.
+Ainsi, les classes qui implémentent les moteurs , les capteurs, les afficheurs et les claviers s'y retrouvent.
+
+Ensuite, le dossier «src» contient le fichier du circuit de la simulation, un header «interface.hpp» qui s'occupe du comportement du robot et un fichier principale «main.cpp» qui éxécutera les fonctions du robot. 
+
+--- INSTRUCTIONS ---
+_______________________________________________________________________________
+L'éxécutable a déjà été créé donc, il ne sera pas nécessaire de faire un «make». Vous pourrez le charger directement sur SimulIde. 

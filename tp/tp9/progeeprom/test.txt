@@ -1,0 +1,46 @@
+dbt;
+
+dbc 10;# la boucle s'exécutera 101 fois
+dal 1 ;# allumer la DEL Vert
+att 4 ;# attendre 25 ms
+dal 255 ;# allumer la DEL Rouge				
+att 4 ;# attendre 25 ms					
+det ;# éteindre la DEL
+
+mon 128; // 10000000. ligne horizontale du haut
+att 4 ;# attendre 25 ms	
+mon 247; // 11110111. ligne verticale droite
+att 4 ;# attendre 25 ms	
+mon 16; // 00010000. ligne horizontale du bas
+att 4 ;# attendre 25 ms	
+mon 254; // 11111110. ligne horizontale gauche
+att 4 ;# attendre 25 ms	
+
+fbc ;# boucler à l'instruction dbc précédente
+
+mof; #eteindre la matrice 4x4
+
+dbc 3 ;# faire le code suivant une fois
+
+mav 127; #avancer 50%
+att 40 ;# attendre 1s
+trd;    #tourner 90deg droite
+trd;    #tourner 90deg droite
+trg;    #tourner 90deg gauche
+trg;    #tourner 90deg gauche
+
+att 20;# attendre 500ms
+mar;    #arreter le moteur
+
+mre 255; #reculer 100%
+att 40 ;# attendre 1s
+trd;    #tourner 90deg droite
+trd;    #tourner 90deg droite
+trg;    #tourner 90deg gauche
+trg;    #tourner 90deg gauche
+mav 255;
+att 40;
+mar;    #arreter le moteur
+
+fbc ;// boucler à l'instruction dbc précédente
+fin;
